@@ -1,0 +1,19 @@
+server:
+  port: '8103'
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: exchange
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: 'true'
+    restart:
+      enabled: 'true'
